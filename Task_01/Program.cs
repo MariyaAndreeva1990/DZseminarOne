@@ -3,16 +3,21 @@
 a = 5; b = 7 -> max = 7
 a = 2 b = 10 -> max = 10
 a = -9 b = -3 -> max = -3*/
-Console.Write("Подставьте числа: ");
-Console.Write("a = ");
+Console.Write("Подставьте числа: a = ");
 int number = Convert.ToInt32(Console.ReadLine());
 Console.Write("b = ");
 int number1 = Convert.ToInt32(Console.ReadLine());
 if (number > number1)
     {
-        Console.Write("max" + " " + "=" + " " + number);
+        Console.WriteLine("max" + " " + "=" + " " + number);
+        Console.Write("min" + " " + "=" + " " + number1);
     }
-    else if (number < number1)
+else if (number < number1)
     {
         Console.Write("max" + " " + "=" + " " + number1);
+        Console.Write("min" + " " + "=" + " " + number);
+    }
+else
+    {
+        Console.Write(number + " " + "=" + " " + number1);
     }
